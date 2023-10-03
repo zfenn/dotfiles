@@ -1,0 +1,13 @@
+#!/bin/bash
+
+bspc query 
+
+
+bspc desktop -f 2;
+
+
+
+sleep 2
+
+
+bspc desktop -f 1;

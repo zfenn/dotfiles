@@ -1,0 +1,5 @@
+#
+# .xinitrc
+#
+
+[ -f ~/.xprofile ] && . ~/.xprofile

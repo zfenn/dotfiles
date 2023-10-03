@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# echo $1
+# echo $2
+if [ ! -z $1 ] && command -v $1 > /dev/null; then
+    exit 0
+fi
+
+exit 1

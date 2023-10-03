@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+vimservername="VIMFRIED"
+tmpfile="/tmp/vimfried"
+
+cmd_vim(){
+	vim --servername $vimservername $1
+}
+
+is_vimserver(){
+	[[ $(vim --serverlist) =~ $vimservername ]] && echo 1 || echo 0
+}
+
+is_tmpfile(){
+	[[ -a $tmpfile ]] && echo 1 || echo 0
+}
+
+write_tmpfile(){
+	windowfocusid="$(xdotool getwindowfocus)"
+	echo $windowfocusid > $tmpfile
+}
+
+focus_window(){
+	xdotool windowactivate "$(cat $tmpfile)"
+}
+
+case $(is_vimserver) in
+
+	0) # No vim server found
+		write_tmpfile
+		# No filename given, open vim
+		if [ -z "$1" ]; then
+			cmd_vim
+		# Filename given, open vim with given file
+		else
+			cmd_vim "--remote-silent $1"
+		fi
+	;;
+
+	1) # Vim server found
+		# Filename given, open file, focus vim
+		if [ ! -z "$1" ]; then
+			cmd_vim "--remote $1"
+		fi
+		focus_window
+	;;
+
+esac

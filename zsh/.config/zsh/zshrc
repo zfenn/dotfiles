@@ -1,0 +1,180 @@
+#
+# zshrc
+
+alias updatedb="sudo updatedb"
+alias udb="sudo updatedb"
+
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""' 
+
+## History
+HISTFILE=~/.local/share/zhistory
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt share_history
+
+## compinit
+autoload -Uz compinit
+compinit -d ~/.cache/zcompdump-$ZSH_VERSION
+zstyle :compinstall filename '~/.zshrc'
+zstyle ':completion:*' menu select
+
+## Options
+setopt autocd extendedglob nomatch notify
+unsetopt beep
+bindkey -v
+
+
+## PATH
+export PATH=~/bin:$PATH
+
+## XDG directories
+export XDG_CACHE_HOME=~/.cache/
+export XDG_CONFIG_HOME=~/.config/
+export XDG_DATA_HOME=~/.local/share/
+export XDG_STATE_HOME=~/.local/state/
+
+## XDG Cleanup
+export GTK_RC_FILES=$XDG_CACHE_HOME/gtk-2.0/gtkrc
+export LESSHISTFILE=$XDG_CACHE_HOME/lesshst
+export WGETRC=$XDG_CONFIG_HOME/wgetrc
+alias wget='wget --hsts-file="$XDG_CACHE_HOME"/wget-hsts'
+
+## (Git Prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:²' formats 'on branch %b'
+setopt PROMPT_SUBST
+autoload -Uz add-zsh-hook vcs_info
+setopt prompt_subst
+add-zsh-hook precmd vcs_info
+# PROMPT="%B%~ %1~ ${vcs_info_msg_0_}>%b "
+export COLOR_GRAY='\e[1;30m'
+PROMPT='%B%~%b${vcs_info_msg_0_} %B> %b'
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr ' *'
+zstyle ':vcs_info:*' stagedstr ' +'
+zstyle ':vcs_info:git:*' formats ' (%b%u%c)'
+zstyle ':vcs_info:git:*' actionformats ' (%b|%a%u%c)'
+## Ansi colors
+export COL_BOLD='\x1b[1m'
+export COL_RED='\033[0;31m'
+export COL_NOCOLOR='\033[0m'
+
+## Alias
+
+### ls
+alias ls="ls --color=always"
+alias l="ls"
+alias ll="ls -la"
+alias la="ls -a"
+
+### cd
+alias ..="cd .."
+
+### cd dotfiles
+alias dot="cd ~/dotfiles"
+alias dt="cd ~/dots"
+
+### exit
+alias e="exit"
+
+## ranger
+alias d='ranger --choosedir=/tmp/.rangerdir; LASTDIR=`cat /tmp/.rangerdir`; cd "$LASTDIR"; rm /tmp/.rangerdir'
+alias d.='ranger'
+
+### pacman alias pac="sudo pacman"
+alias aur="pikaur"
+
+### vim
+alias vim="vim --servername 'VIMFRIED'"
+alias v="vim"
+alias vi="vim"
+
+### source .zshrc
+alias so="source ~/.config/zsh/zshrc"
+
+### startx
+alias x="startx"
+
+### -g
+alias -g LL="| less"
+
+### git
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gs="git status" # ls
+alias ls="ls --color=always"
+alias l="ls"
+alias ll="ls -la"
+alias la="ls -a"
+alias ..="cd .."
+alias e="exit"
+
+### pacman
+alias pac="sudo pacman"
+alias aur="pikaur"
+
+
+### vim
+alias vim="vim --servername 'VIMFRIED'"
+alias v="vim"
+alias vi="vim"
+
+
+### source .zshrc
+alias soz="source $HOME/.zshrc"
+
+### more
+alias x="startx"
+alias -g LL="| less"
+
+### git
+alias ga="git add"
+alias -g gc="git commit"
+alias gp="git push"
+alias gs="git status"
+
+## bindings
+
+# create a zkbd compatible hash;
+# to add other keys to this hash, see: man 5 terminfo
+typeset -g -A key
+
+key[Home]="${terminfo[khome]}"
+key[End]="${terminfo[kend]}"
+key[Insert]="${terminfo[kich1]}"
+key[Backspace]="${terminfo[kbs]}"
+key[Delete]="${terminfo[kdch1]}"
+key[Up]="${terminfo[kcuu1]}"
+key[Down]="${terminfo[kcud1]}"
+key[Left]="${terminfo[kcub1]}"
+key[Right]="${terminfo[kcuf1]}"
+key[PageUp]="${terminfo[kpp]}"
+key[PageDown]="${terminfo[knp]}"
+key[Shift-Tab]="${terminfo[kcbt]}"
+
+# setup key accordingly
+[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
+[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
+[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
+[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
+[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
+[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
+[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
+[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
+[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
+
+# Finally, make sure the terminal is in application mode, when zle is
+# active. Only then are the values from $terminfo valid.
+if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
+	autoload -Uz add-zle-hook-widget
+	function zle_application_mode_start { echoti smkx }
+	function zle_application_mode_stop { echoti rmkx }
+	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+fi
