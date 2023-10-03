@@ -5,7 +5,7 @@ xrandr --output LVDS-1 --mode 1920x1080_60.00
 polybar&
 nm-applet&
 picom&
-redshift&
+# redshift&
 xinput -disable 16
 setxkbmap -option caps:escape
 #set -dpms
@@ -18,3 +18,5 @@ setxkbmap -option caps:escape
                 && xmodmap ~/.config/x/xmodmap
 
 bspwm
+
+# vim: ft=sh

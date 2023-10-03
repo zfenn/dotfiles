@@ -3,12 +3,17 @@
 nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
 
-"" Mapleader
+" Mapleader
 let mapleader = ","
 
 "" Folds
-"" Toggle open / close fold at the cursor
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""" Toggle open / close fold at the cursor
 map eo za
+
+""" Close all folds
+map em zM
 
 """ Open all folds at the cursor
 map eO zO

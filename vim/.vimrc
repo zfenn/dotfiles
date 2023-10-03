@@ -1,6 +1,5 @@
 "
 " .vimrc
-"
 
 " Environment
 set directory=$XDG_CACHE_HOME/vim,~/,/tmp
@@ -31,6 +30,9 @@ set statusline+=\ \|\          		 " Spacer
 call plug#begin("~/.local/share/vim/plugged")
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
+
+""" Auto-Pairs
+    Plug 'jiangmiao/auto-pairs'
 
 """ Buftabline
     Plug 'ap/vim-buftabline'

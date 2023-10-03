@@ -1,7 +1,11 @@
 #
 # qutebrowser/config.py
 
+
 config.load_autoconfig(True)
+
+c.tabs.new_position.unrelated = "next"
+
 
 config.bind(",p", "spawn --userscript password-fill")
 
