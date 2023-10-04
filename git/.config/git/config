@@ -1,1 +1,5 @@
-p/dotfiles/git/.gitconfig
+[user]
+	email = zfenn@example.com
+	name = Zfenn
+[core]
+	editor = vim

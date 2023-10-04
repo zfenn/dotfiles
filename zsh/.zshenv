@@ -1,14 +1,15 @@
-#
-# .zshenv
+# vim set ft=zsh
 
-source  ~/.globenv
+bindkey -v
+
+source  /home/zfen/.globenv
 
 typeset -aU path
 path+=("$HOME/bin")
 
-HISTFILE="$XDG_DATA_HOME/zhistory"
-HISTSIZE=100000
+HISTSIZE=1000
 SAVEHIST=$HISTSIZE
+HISTFILE="$XDG_DATA_HOME/zhistory"
 
-ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-source $ZDOTDIR/zshrc
+ZDOTDIR="/home/zfen/.config/zsh"
+source "$ZDOTDIR/zshrc"

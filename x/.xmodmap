@@ -15,6 +15,3 @@ keycode 28  = t T t T   EuroSign      Tslash  tslash
 keycode 35  =           plus          asterisk 
 keycode 52  = y Y y Y   ampersand
 keycode 53  = x X x X   percent
-
-clear lock
-keycode 66  = Escape    NoSymbol Escape

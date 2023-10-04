@@ -1,7 +1,7 @@
-for file in ~/.config/x/autostart/*; do
+for file in ~/.config/autostart/*.autostart; do
     source $file
 done
 
 pgrep -x bspwm > /dev/null || bspwm
 
-# vim: ft=sh
+# # vim: ft=sh

@@ -1,17 +1,15 @@
-#
-# .globenv
+
 
 XDG_CACHE_HOME="$HOME/.cache"
 XDG_CONFIG_HOME="$HOME/.config"
 XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME XDG_CONFIG_HOME XDG_DATA_HOME
 
 # XDG Cleanup
 #GTK
-export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
+GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
 
 #LESS
-export LESSHISTFILE=$XDG_CACHE_HOME/lesshst
+export LESSHISTFILE=/dev/null
 
 #WGET
 export WGETRC=$XDG_CONFIG_HOME/wgetrc
@@ -25,15 +23,12 @@ export XRESOURCES="$XDG_CONFIG_HOME/x/xresources"
 export XMODMAP="$XDG_CONFIG_HOME/x/xmodmap"
 export DOTFILESDIR=$HOME/dotfiles
 
-# PATH
-if [ ! -d $HOME/bin ]; then
-		mkdir $HOME/bin
-fi
-export PATH=$HOME/bin:$PATH
 
-
-if is "command"  "ag"; then
+# if is "command"  "ag"; then
     export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-else
-    echo "Package ag (the-silver_server) not found"
-fi
+# else
+#     echo "Package ag (the-silver_server) not found"
+# fi
+
+
+# vim set ft=zsh

@@ -1,6 +1,3 @@
-#
-# ~/.bashrc
-#
 
 source $HOME/.env
 
