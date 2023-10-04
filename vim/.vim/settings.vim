@@ -1,12 +1,15 @@
 "
 " settings.vim
-"
+
+set autoread
 
 set cmdheight=2
-set listchars=tab:›\ ,nbsp:␣,trail:•,precedes:«,extends:»
 
-set noshowmode    
-set fillchars=fold:\ 
+set list
+set listchars=trail:•
+
+set noshowmode
+" set fillchars=fold:\-
 set formatoptions-=cro
 set shortmess+=I
 
@@ -27,19 +30,20 @@ set ruler
 
 set viminfo+=n~/.cache/vim/viminfo " Path to viminfo
 set undodir=$XDG_CACHE_HOME/vim/undo    " List of undo dir names (sep by ,)
-set undofile                       
+set undofile
 let g:netrw_home=$XDG_CACHE_HOME. '/vim/'
 
 syntax on
 filetype plugin on
 set cursorline
 set relativenumber
+set nu rnu
 set colorcolumn=78
 set hidden
 set winfixwidth
 set noequalalways
 set virtualedit=all
-set nostartofline   
+set nostartofline
 
 " set tabline=0
 

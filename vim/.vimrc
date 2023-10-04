@@ -2,18 +2,14 @@
 " .vimrc
 
 " Environment
-set directory=$XDG_CACHE_HOME/vim,~/,/tmp
-set backupdir=$XDG_CACHE_HOME/vim,~/,/tmp
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
-" set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
-" let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
 
 source ~/.vim/settings.vim
-source ~/.vim/colors.vim 
+source ~/.vim/colors.vim
 source ~/.vim/bindings.vim
 source ~/.vim/zffold.vim
 
-"" Statusline 
+"" Statusline
 hi User1 guifg=white guibg=darkgrey
 set statusline=%1*\ %{strftime('%H:%M')} " TIme
 set statusline+=\ \|\          		 " Spacer
@@ -36,16 +32,18 @@ call plug#begin("~/.local/share/vim/plugged")
 
 """ Buftabline
     Plug 'ap/vim-buftabline'
-    " if exists ('buftabline#update') 
+    " if exists ('buftabline#update')
        " silent call buftabline#update(0)
     " endif
     " au BufWritePost,FileWritePost call buftabline#update(0)
-             
+
     let g:buftabline_numbers = 2
-    let g:buftabline_indicators = 1 
-    let g:buftabline_separators = 1 
-    hi BufTabLineCurrent guifg=white guibg=blue gui=bold
-    hi BufTabLineActive ctermfg=black gui=bold
+    let g:buftabline_indicators = 1
+    let g:buftabline_separators = 1
+    hi BufTabLineCurrent guifg=white      guibg=darkred cterm=bold gui=bold
+    hi BufTabLineActive  guifg=white guibg=blue  gui=bold cterm=bold
+    hi BufTabLineFill    guibg=grey
+    hi BufTabLineHidden  guibg=grey
 
 """MVim Symlink
     Plug 'aymericbeaumet/vim-symlink'
@@ -115,7 +113,9 @@ call plug#end()
 
 
 "" Source vim-configs on save
- autocmd! bufwritepost *vim* source ~/.vimrc
+autocmd! bufwritepost *vim* source ~/.vimrc
+"" Disabled Delete trailing space on save"
+" autocmd! BufWritePre * :%s/\s\+$//e
 
 "" Change cursor for Normal / Insert
 let &t_SI = "\e[6 q"
@@ -130,7 +130,7 @@ augroup END
 "autocmd VimResized * wincmd =
 
 "" Map snippet move to tab
-" nmap <expr> <tab> v:count > 0 ? 
+" nmap <expr> <tab> v:count > 0 ?
 "             \ '<Plug>BufTabLine.Go(' . v:count . ')' :
 "             \':bnext<cr>'
 
@@ -176,3 +176,5 @@ command! -bar RangerChooser call RangeChooser()
 nnoremap <leader>d :<C-U>RangerChooser<CR>
 
 
+"" set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+" let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"

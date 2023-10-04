@@ -1,8 +1,5 @@
 #! /bin/sh
 
-
-pgrep -x sxhkd > /dev/null || sxhkd &
-
 bspc monitor -d 1 2 3
 
 bspc config normal_border_color  "#000000"

@@ -9,7 +9,7 @@ zshplug_slug="/usr/share/zsh/plugins/zsh"
 # . $zshplug_slug-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### zsh auto-pair
-# . $zshplug_slug-autopair/autopair.zsh
+. $zshplug_slug-autopair/autopair.zsh
 #------------------------------------------------------------------------------
 
 

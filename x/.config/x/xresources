@@ -1,58 +1,49 @@
-/* ! vim: set ft=c */
-
-#include "/home/zfen/.config/x/PencilLight.xresources"
-*background: #DBDBDB
 st.font:	DejaVu Sans Mono:pixelsize=11.0:antialias=true:autohint=true;
+st.borderpx: 0
 
-/* !!- 0.1 to 0.9 = transparency */
-/* !st.alpha: 1.0 */
+!! PencilLight
+!! https://github.com/janoamaral/Xresources-themes
+!! With some changes
+*.foreground:  #424242
+! *.background:  #f1f1f1
+*background: #DBDBDB
+*.cursorColor: #20bbfc
 
-/* ! window padding */
-/* st.borderpx: 0 */
+! Black
+*.color0:      #212121
+*.color8:      #424242
 
-/* st.font:	Source Code Pro :pixelsize=12.0:antialias=true:autohint=true; */
+! Red
+*.color1:      #c30771
+*.color9:      #fb007a
 
-/* st.cursorshape: 5 */
-/* ! Base16 PaperColor Light */
-/* ! Scheme author: Jon Leopard (http://github.com/jonleopard) based on */ 
-/* ! PaperColor Theme (https://github.com/NLKNguyen/papercolor-theme) */
-/* ! Template author: Tinted Theming (https://github.com/tinted-theming) */
+! Green
+*.color2:      #10a778
+*.color10:     #5fd7af
 
-/* #define base00 #ffffff */
-/* #define base01 #af0000 */
-/* #define base02 #008700 */
-/* #define base03 #5f8700 */
-/* #define base04 #0087af */
-/* #define base05 #000000 */
-/* #define base06 #005f87 */
-/* #define base07 #878787 */
-/* #define base08 #bcbcbc */
-/* #define base09 #d70000 */
-/* #define base0A #d70087 */
-/* #define base0B #8700af */
-/* #define base0C #d75f00 */
-/* #define base0D #ff7106 */
-/* #define base0E #7CB9E8 */
-/* #define base0F #005f87 */
+! Yellow
+*.color3:      #a89c14
+*.color11:     #f3e430
 
-/* *foreground:   base05 */
-/* *background:      base00 */
-/* *cursorColor:  base04 */
+! Blue
+*.color4:      #008ec4
+*.color12:     #20bbfc
 
-/* *color0:       base00 */
-/* *color1:       base08 */
-/* *color2:       base0B */
-/* *color3:       base0A */
-/* *color4:       base0D */
-/* *color5:       base0E */
-/* *color6:       base0C */
-/* *color7:       base05 */
+! Magenta
+*.color5:      #523c79
+*.color13:     #6855de
 
-/* *color8:       base03 */
-/* *color9:       base09 */
-/* *color10:      base01 */
-/* *color11:      base02 */
-/* *color12:      base04 */
-/* *color13:      base06 */
-/* *color14:      base0F */
-/* *color15:      base07 */
+! Cyan
+*.color6:      #20a5ba
+*.color14:     #4fb8cc
+
+! White
+*.color7:      #d9d9d9
+*.color15:     #f1f1f1
+
+! Bold, Italic, Underline
+*.colorBD:     #fb007a
+!*.colorIT:
+!*.colorUL:
+
+vim: set ft=xmodmap

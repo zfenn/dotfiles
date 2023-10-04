@@ -1,0 +1,2 @@
+[[ -f ~/.config/x/xresources ]] \
+    && xrdb -merge ~/.config/x/xresources

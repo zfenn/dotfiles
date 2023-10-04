@@ -34,8 +34,11 @@ endfunction
 
 " ZfFold autocommands
 au BufEnter *.env,.txt,*zsh*,*.env  setlocal foldexpr=ZfFold('#')
-au BufEnter *.env,.txt,*zsh*  setlocal foldmethod=expr     
+au BufEnter *.env,.txt,*zsh*  setlocal foldmethod=expr
 au BufEnter *.env,.txt,*zsh*  setlocal foldtext=ZfFoldText()
 au BufEnter *vim* setlocal foldexpr=ZfFold('\"')
-au BufEnter *vim* setlocal foldmethod=expr     
+au BufEnter *vim* setlocal foldmethod=expr
 au BufEnter *vim* setlocal foldtext=ZfFoldText()
+au BufEnter xmodmap setlocal foldexpr=ZfFold('!')
+au BufEnter xmodmap setlocal foldmethod=expr
+au BufEnter xmodmap setlocal foldtext=ZfFoldText()

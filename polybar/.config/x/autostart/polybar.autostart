@@ -1,0 +1,1 @@
+pgrep -x polybar > /dev/null || polybar &
