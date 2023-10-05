@@ -1,8 +1,4 @@
-# vim set ft=zsh
-
-bindkey -v
-
-## Options
+## OPTIONS
 setopt autocd
 setopt extendedglob
 setopt nomatch
@@ -11,20 +7,18 @@ setopt share_history
 
 unsetopt beep
 
-## Completion
+## COMPLETION
 autoload -Uz compinit
 compinit -d "$XDG_CACHE_HOME/compdump-$ZSH_VERSION"
 zstyle :compinstall filename '$HOME/.zshrc'
 zstyle ':completion:*' menu select
 
-## Plugins
-# if [[]]
-# for file in ~/.config/autostart/*.autostart; do
-#     source $file
-# done
+## PLUGINS
+for file in $XDG_CONFIG_HOME/zsh/plugins/*.zsh; do
+    source $file
+done
 
-## alias
-#-----------------------------------------------------------------------------
+## ALIAS
 ### updatedb
 alias udb="sudo updatedb"
 alias updatedb="sudo updatedb"
@@ -87,8 +81,8 @@ alias vim="vim --servername 'VIMFRIED'"
 alias v="vim"
 alias vi="vim"
 
-### source .zshrc
-alias soz="source $HOME/.zshrc"
+### source .zshenv
+alias soz="source $HOME/.zshenv"
 
 ### git
 alias ga="git add"
@@ -96,7 +90,7 @@ alias -g gc="git commit"
 alias gp="git push"
 alias gs="git status"
 
-## Git Prompt
+## GIT PROMPT
 autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:²' formats 'on branch %b'

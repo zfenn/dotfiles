@@ -1,7 +1,3 @@
-# vim set ft=zsh
-
-bindkey -v
-
 source  /home/zfen/.globenv
 
 typeset -aU path

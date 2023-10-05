@@ -1,13 +1,17 @@
+
 st.font:	DejaVu Sans Mono:pixelsize=11.0:antialias=true:autohint=true;
 st.borderpx: 0
 
 !! PencilLight
 !! https://github.com/janoamaral/Xresources-themes
 !! With some changes
+
 *.foreground:  #424242
 ! *.background:  #f1f1f1
 *background: #DBDBDB
-*.cursorColor: #20bbfc
+!*.cursorColor: #20bbfc
+!*.cursorColor: #000000
+*.cursorColor: #20a5ba
 
 ! Black
 *.color0:      #212121
@@ -46,4 +50,3 @@ st.borderpx: 0
 !*.colorIT:
 !*.colorUL:
 
-vim: set ft=xmodmap
