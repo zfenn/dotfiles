@@ -39,11 +39,8 @@ map Q <Nop>
 map Qq :q<CR>
 map Qw :wa<CR>:q<CR> 
 
-"" Switch tabs
-
-" map J <C-W>j
-" map K <C-W>k
-" map L <C-W>l
+"" Switch between last and current buffer
+nnoremap <leader> bb :e #<cr>
 
 "" Window / Panes
 unmap w
@@ -66,7 +63,7 @@ map wm <C-W><C-R>
 "" Buffer Close
 
 map <leader>bo :e ~/.vim/colors.vim<CR> 
-map <leader>bd :bp<CR>:bd#<CR> :echo "Buffer closed"<CR>
+map <leader>bd :bp<CR>:bd#<CR>
 
 "" Insert above / below without starting insert mode
 map o o<esc>

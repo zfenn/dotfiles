@@ -41,7 +41,7 @@ set nu rnu
 set colorcolumn=78
 set hidden
 set winfixwidth
-set noequalalways
+" set noequalalways
 set virtualedit=all
 set nostartofline
 

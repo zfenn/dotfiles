@@ -4,6 +4,8 @@
 
 config.load_autoconfig(True)
 
+c.zoom.default = "120%"
+
 c.tabs.new_position.unrelated = "next"
 
 
@@ -24,6 +26,8 @@ config.bind ("~", "zoom-in")
 config.bind("J", "tab-prev")
 config.bind("K", "tab-next")
 
+config.bind("wq", "quit --save")
+
 config.bind("wo", "window-only")
 config.bind("wc", "close")
 
@@ -32,13 +36,15 @@ c.auto_save.session = True
 c.downloads.location.directory = "~/downloads"
 
 c.hints.chars ="asdfer"
-c.zoom.default = "90%"
 
 c.content.autoplay = False
 
 
-c.fonts.tabs.unselected        = "13 normal_family"
-c.fonts.tabs.selected          = "13 bold"
+# c.fonts.tabs.unselected        = "20 normal_family"
+# c.fonts.tabs.selected          = "10 bold"
+c.fonts.default_family           = "Source Code Pro"
+c.fonts.default_size             = "12pt"
+c.tabs.favicons.scale            = 0.8
 
 c.colors.tabs.even.fg          = "#000000"
 c.colors.tabs.even.bg          = "#e5e5e5"

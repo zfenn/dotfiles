@@ -1,238 +1,76 @@
 windows:
-- geometry: !!binary |
-    AdnQywADAAD//////////wAAAx4AAASAAAAAAAAAAAAAAAMdAAAEfwAAAAAAAAAACAAAAAAAAAAA
-    AAAAAx0AAAR/
+- active: true
+  geometry: !!binary |
+    AdnQywADAAAAAANS/////wAACYAAAAVJAAADUwAAAAAAAAl/AAAFSAAAAAAAAAAACYAAAANTAAAA
+    AAAACX8AAAVI
   tabs:
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:19:20'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: zfenn/dotfiles
+      url: https://github.com/zfenn/dotfiles
+      zoom: 1.2
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:19:17'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: st - simple terminal | suckless.org software that sucks less
+      url: https://st.suckless.org/patches/charoffsets/
+      zoom: 1.2
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:19:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'bashtage/arch: ARCH models in Python'
+      url: https://github.com/bashtage/arch
+      zoom: 1.2
   - active: true
     history:
-    - last_visited: '2023-10-07T15:27:31'
+    - last_visited: '2023-10-07T19:22:40'
       pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/
-    - last_visited: '2023-10-07T15:33:01'
+      title: '| qutebrowser'
+      url: https://qutebrowser.org/doc/help/settings.html#fonts.completion.category
+    - last_visited: '2023-10-07T19:22:51'
       pinned: false
-      title: tools | suckless.org software that sucks less
-      url: https://tools.suckless.org/
-    - last_visited: '2023-10-07T15:33:18'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/
-    - last_visited: '2023-10-07T15:34:30'
-      pinned: false
-      title: e.V. | suckless.org software that sucks less
-      url: https://ev.suckless.org/
-    - last_visited: '2023-10-07T15:34:33'
-      pinned: false
-      title: tools | suckless.org software that sucks less
-      url: https://tools.suckless.org/
-    - last_visited: '2023-10-07T15:34:35'
-      pinned: false
-      title: tools | suckless.org software that sucks less
-      url: https://tools.suckless.org/scroll/
-    - last_visited: '2023-10-07T16:22:48'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/
-    - last_visited: '2023-10-07T16:22:51'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/patches/
-    - last_visited: '2023-10-07T16:22:54'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/patches/xresources-with-reload-signal/
-    - last_visited: '2023-10-07T16:53:31'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/
-    - last_visited: '2023-10-07T16:59:57'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/patches/
-    - last_visited: '2023-10-07T17:03:00'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/patches/xresources-with-reload-signal/
-    - last_visited: '2023-10-07T17:10:26'
-      pinned: false
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/patches/bold-is-not-bright/
+      title: '| qutebrowser'
+      url: https://qutebrowser.org/doc/help/settings.html#tabs.background
     - active: true
-      last_visited: '2023-10-07T17:10:43'
+      last_visited: '2023-10-07T19:23:46'
+      original-url: http://youtube.com/
       pinned: false
       scroll-pos:
         x: 0
-        y: 600
-      title: st - simple terminal | suckless.org software that sucks less
-      url: https://st.suckless.org/patches/clipboard/
-      zoom: 1.1
+        y: 117278
+      title: YouTube
+      url: https://www.youtube.com/
+      zoom: 1.2
   - history:
-    - last_visited: '2023-10-07T16:51:24'
-      pinned: false
-      title: xterm font at DuckDuckGo
-      url: https://duckduckgo.com/?q=xterm+font&ia=web
-    - last_visited: '2023-10-07T16:51:49'
-      pinned: false
-      title: xterm xresources at DuckDuckGo
-      url: https://duckduckgo.com/?q=xterm+xresources&ia=web
-    - last_visited: '2023-10-07T16:51:55'
-      pinned: false
-      title: 'GitHub - xterm-x11/files.Xresources: .Xresources files for XTerm'
-      url: https://github.com/xterm-x11/files.Xresources
-    - last_visited: '2023-10-07T17:02:07'
-      pinned: false
-      title: files.Xresources/sample.Xresources at main · xterm-x11/files.Xresources
-        · GitHub
-      url: https://github.com/xterm-x11/files.Xresources/blob/main/sample.Xresources
     - active: true
-      last_visited: '2023-10-07T17:02:21'
+      last_visited: '2023-10-07T19:19:17'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: st terminal git at DuckDuckGo
-      url: https://duckduckgo.com/?q=st+terminal+git&ia=web
-      zoom: 1.0
+      title: command line - What does the linux pipe symbol "|" do? - Super User
+      url: https://superuser.com/questions/756158/what-does-the-linux-pipe-symbol-do
+      zoom: 1.2
   - history:
-    - last_visited: '2023-10-07T16:30:10'
-      pinned: false
-      title: xterm font at DuckDuckGo
-      url: https://duckduckgo.com/?q=xterm+font&ia=web
     - active: true
-      last_visited: '2023-10-07T16:30:11'
+      last_visited: '2023-10-07T19:19:20'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: How do you know the correct name to use for X11 fonts for XTerm*faceName
-        or xterm -fa <NAME>? - Super User
-      url: https://superuser.com/questions/465142/how-do-you-know-the-correct-name-to-use-for-x11-fonts-for-xtermfacename-or-xter
-      zoom: 0.9
-  - history:
-    - last_visited: '2023-10-07T16:19:38'
-      pinned: false
-      title: linux set wallpaper root at DuckDuckGo
-      url: https://duckduckgo.com/?q=linux+set+wallpaper+root&ia=web
-    - last_visited: '2023-10-07T16:20:13'
-      pinned: false
-      title: linux set wallpaper command at DuckDuckGo
-      url: https://duckduckgo.com/?q=linux+set+wallpaper+command&ia=web
-    - last_visited: '2023-10-07T16:20:56'
-      pinned: false
-      title: linux change desktop bgcolor at DuckDuckGo
-      url: https://duckduckgo.com/?q=linux+change+desktop+bgcolor&ia=web
-    - last_visited: '2023-10-07T16:21:07'
-      pinned: false
-      title: arch change desktop bgcolor at DuckDuckGo
-      url: https://duckduckgo.com/?q=arch+change+desktop+bgcolor&ia=web
-    - last_visited: '2023-10-07T16:22:07'
-      pinned: false
-      title: xmodmap on the fly change at DuckDuckGo
-      url: https://duckduckgo.com/?q=xmodmap+on+the+fly+change&ia=web
-    - active: true
-      last_visited: '2023-10-07T16:22:24'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: xmodmap on the fly change/USR1 at DuckDuckGo
-      url: https://duckduckgo.com/?q=xmodmap+on+the+fly+change%2FUSR1&ia=web
-      zoom: 0.9
-  - history:
-    - last_visited: '2023-10-07T15:32:17'
-      pinned: false
-      title: 'GitHub - gnotclub/xst: st fork that uses Xresources and some pretty
-        good patches'
-      url: https://github.com/gnotclub/xst
-    - last_visited: '2023-10-07T15:32:17'
-      pinned: false
-      title: xst/.github/workflows at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/tree/master/.github/workflows
-    - last_visited: '2023-10-07T15:32:20'
-      pinned: false
-      title: xst/.github/workflows/make.yml at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/blob/master/.github/workflows/make.yml
-    - last_visited: '2023-10-07T15:32:39'
-      pinned: false
-      title: xst/LEGACY at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/blob/master/LEGACY
-    - last_visited: '2023-10-07T15:32:44'
-      pinned: false
-      title: xst/.gitignore at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/blob/master/.gitignore
-    - last_visited: '2023-10-07T15:32:45'
-      pinned: false
-      title: xst/FAQ at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/blob/master/FAQ
-    - last_visited: '2023-10-07T15:35:47'
-      pinned: false
-      title: xst/Makefile at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/blob/master/Makefile
-    - last_visited: '2023-10-07T15:36:23'
-      pinned: false
-      title: xst/.envrc at master · gnotclub/xst · GitHub
-      url: https://github.com/gnotclub/xst/blob/master/.envrc
-    - last_visited: '2023-10-07T15:36:26'
-      pinned: false
-      title: gnotclub · GitHub
-      url: https://github.com/gnotclub
-    - last_visited: '2023-10-07T15:36:45'
-      pinned: false
-      title: gnotclub · GitHub
-      url: https://github.com/orgs/gnotclub/repositories
-    - last_visited: '2023-10-07T15:37:08'
-      pinned: false
-      title: 'GitHub - gnotclub/stultus: A fork of... something... soon... i think...
-        no yeah definitely'
-      url: https://github.com/gnotclub/stultus
-    - last_visited: '2023-10-07T15:38:44'
-      pinned: false
-      title: 'GitHub: Let’s build from here · GitHub'
-      url: https://github.com/
-    - active: true
-      last_visited: '2023-10-07T15:38:48'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: Repository search results · GitHub
-      url: https://github.com/search?q=arch&type=repositories
-      zoom: 0.9
-  - history:
-    - active: true
-      last_visited: '2023-10-07T15:38:53'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: 'GitHub - bashtage/arch: ARCH models in Python'
-      url: https://github.com/bashtage/arch
-      zoom: 0.9
-  - history:
-    - last_visited: '2023-10-07T16:10:00'
-      pinned: false
-      title: xterm xresources at DuckDuckGo
-      url: https://duckduckgo.com/?q=xterm+xresources&ia=web
-    - last_visited: '2023-10-07T16:13:21'
-      pinned: false
-      title: 16:9 auflösungen at DuckDuckGo
-      url: https://duckduckgo.com/?q=16%3A9+aufl%C3%B6sungen&ia=web
-    - active: true
-      last_visited: '2023-10-07T16:13:21'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 5220
-      title: List of True 16:9 Resolutions – Pacoup.com
-      url: https://pacoup.com/2011/06/12/list-of-true-169-resolutions/
-      zoom: 0.9
-  - history:
-    - active: true
-      last_visited: '2023-10-07T15:30:21'
-      pinned: false
-      scroll-pos:
-        x: 0
-        y: 0
-      title: AUR (en) - colorpicker
-      url: https://aur.archlinux.org/packages/colorpicker
-      zoom: 0.9
+      title: Improve fonts archlinux
+      url: https://gist.github.com/YoEight/d19112db56cd8f93835bf2d009d617f7
+      zoom: 1.2

@@ -6,18 +6,27 @@
 !xterm*faceSize: 11
 !xterm*boldMode: false
 
-/* st.font: DejaVu Sans:pixelsize=18.0:antialias=true:autohint=true; */
-st.font: DejaVu Sans Mono:pixelsize=15.0:antialias=true:autohint=true;
+!st.font: DejaVu Sans:pixelsize=15.0:antialias=true:autohint=true;
+st.font: Source Code Pro:pixelsize=15.0:antialias=true:autohint=true;
 
+xft.dpi: 210
+*.dpi: 210
+*.autohint: 0
+*.lcdfilter:  lcddefault
+*.hintstyle:  hinslight
+*.hinting: 1
+*.antialias: 1
+*.rgba: rgb
+*.dpi: 192
 
 /* !! PencilLight */
 /* !! https://github.com/janoamaral/Xresources-themes */
 /* !! With some changes */
 
 st.foreground:  #000000
+st.background:  #E5E4E2
 st.cursorColor: #20a5ba
 
-st.background: #dbdbdb
 
 
 ! Black

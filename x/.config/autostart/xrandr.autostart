@@ -3,3 +3,7 @@
 # xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 # xrandr --addmode LVDS-1 1920x1080_60.00
 # xrandr --output LVDS-1 --mode 1920x1080_60.00 
+
+xrandr --newmode 2432x1368_60.00  280.25  2432 2608 2864 3296  1368 1371 1376 1418 -hsync +vsync
+xrandr --addmode LVDS-1 2432x1368_60.00
+xrandr --output LVDS-1 --mode 2432x1368_60.00

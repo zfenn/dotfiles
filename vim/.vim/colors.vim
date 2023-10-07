@@ -3,14 +3,14 @@
 
 set t_Co=255
 " set background=light
-    set background=light
+set background=light
 
 colorscheme pencil
-    " set termguicolors
+set termguicolors
 
 " let g:pencil_higher_contrast_ui = 0
-hi Normal guibg=#DBDBDB
-hi Nontext guibg=#DBDBDB
+hi Normal guibg=#e5e4e2
+hi Nontext guibg=#e5e4e2
 
 " hi CursorLine   ctermbg=255
 hi CursorLineNr   guifg=blue gui=bold

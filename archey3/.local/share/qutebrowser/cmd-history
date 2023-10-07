@@ -19,3 +19,36 @@
 :open -t xterm font
 /font
 :open st terminal git
+:open -t gist.github.com
+:open -t linux no .ssh
+:open -t github.com
+:open github.com
+:open html gray colors
+:open -t arch linux get dpi
+:open arch beautiful fonts
+:set zoom.default 100
+:set zoom.default 110
+:restart
+:open -t linux mount ntfs
+:open arch linux mount ntfs unknown
+:open linux mount windows unclean file system
+:open linux achronis true image
+:open -t arch linux exec sudo without sudo
+:open linux mount ntfs takes long
+:open -t vim toggle last buffer
+:open arch which dpi
+:open linux pipe symbol
+:open awk linux
+:open arch linux terminus bitmap font
+:restart
+:open qutebrowser fonts to small
+:open qutebrowser font
+/font
+:restart
+:config-source
+:restart
+:reload
+:restart 
+:config-source
+/favicon
+:open youtube.com

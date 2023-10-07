@@ -19,4 +19,4 @@ settings:
   tabs.pinned.shrink:
     global: false
   zoom.default:
-    global: '95'
+    global: '110'

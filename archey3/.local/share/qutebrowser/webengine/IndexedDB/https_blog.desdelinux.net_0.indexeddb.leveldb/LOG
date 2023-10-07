@@ -1,0 +1,7 @@
+2023/10/07-18:02:12.150 2502 Reusing MANIFEST /home/zfen/.local/share/qutebrowser/webengine/IndexedDB/https_blog.desdelinux.net_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/07-18:02:12.150 2502 Recovering log #3
+2023/10/07-18:02:12.150 2502 Reusing old log /home/zfen/.local/share/qutebrowser/webengine/IndexedDB/https_blog.desdelinux.net_0.indexeddb.leveldb/000003.log 
+2023/10/07-18:33:50.551 2a11 Level-0 table #5: started
+2023/10/07-18:33:50.607 2a11 Level-0 table #5: 7954 bytes OK
+2023/10/07-18:33:50.655 2a11 Delete type=0 #3
+2023/10/07-18:33:50.655 2a11 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

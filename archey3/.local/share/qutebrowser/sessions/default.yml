@@ -1,26 +1,67 @@
 windows:
-- geometry: !!binary |
-    AdnQywADAAD//////////wAAAm8AAAOEAAAAAAAAAAAAAAJuAAADgwAAAAAAAAAABkAAAAAAAAAA
-    AAAAAm4AAAOD
+- active: true
+  geometry: !!binary |
+    AdnQywADAAAAAANS/////wAACYAAAAVJAAADUwAAAAAAAAl/AAAFSAAAAAAAAAAACYAAAANTAAAA
+    AAAACX8AAAVI
   tabs:
   - history:
     - active: true
-      last_visited: '2023-10-06T23:24:06'
+      last_visited: '2023-10-07T19:18:54'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: DuckDuckGo — Privacy, simplified.
-      url: https://start.duckduckgo.com/
-      zoom: 0.9
+      title: zfenn/dotfiles
+      url: https://github.com/zfenn/dotfiles
+      zoom: 1.2
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:18:50'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: st - simple terminal | suckless.org software that sucks less
+      url: https://st.suckless.org/patches/charoffsets/
+      zoom: 1.2
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:18:55'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'bashtage/arch: ARCH models in Python'
+      url: https://github.com/bashtage/arch
+      zoom: 1.2
   - active: true
     history:
     - active: true
-      last_visited: '2023-10-06T23:24:06'
+      last_visited: '2023-10-07T19:18:53'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 89546
+      title: '| qutebrowser'
+      url: https://qutebrowser.org/doc/help/settings.html#fonts.completion.category
+      zoom: 1.2
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:18:50'
       pinned: false
       scroll-pos:
         x: 0
         y: 0
-      title: qutebrowser quickstart | qutebrowser
-      url: https://www.qutebrowser.org/quickstart.html
-      zoom: 0.9
+      title: command line - What does the linux pipe symbol "|" do? - Super User
+      url: https://superuser.com/questions/756158/what-does-the-linux-pipe-symbol-do
+      zoom: 1.2
+  - history:
+    - active: true
+      last_visited: '2023-10-07T19:18:54'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Improve fonts archlinux
+      url: https://gist.github.com/YoEight/d19112db56cd8f93835bf2d009d617f7
+      zoom: 1.2
