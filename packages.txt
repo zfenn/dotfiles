@@ -1,0 +1,33 @@
+pac -S stow gvim zsh git
+sudo pacman -S make
+pac -S xorg-xinit
+mkdir ~/downloads
+qutebrowser
+pac -S wget
+wget dl.suckless.org/st/st-0.9.tar.gz
+pac -S patch
+pac -S pkg-config
+pac -S gcc
+pac -S network-manager-applet polybar
+pac -S picom
+pac -S xorg-xinput
+pac -S ranger
+vim --> PlugInstall
+pac -S cmake
+cd .local/share/vim/plugged/YouCompleteMe
+python ./install.py
+pac -S linux-headers
+pac -S netctl
+mlocate
+dialog
+pac -S broadcom-wl
+pac -S pulseaudio pulseaudio-alsa
+pac -S pavucontrol
+pac -S dmenu
+pac -S rofi
+git clone https://github.com/actionless/pikaur
+pac -S fakeroot
+For pikaur: makepkg -fsri
+git clone https://aur.archlinux.org/colorpicker
+pac -S light
+usermod -aG video <user>

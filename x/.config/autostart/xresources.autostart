@@ -1,2 +1,4 @@
+# vim: ft=sh
+
 [[ -f ~/.xresources ]] \
     && xrdb -load ~/.xresources

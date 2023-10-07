@@ -1,0 +1,745 @@
+[    54.074] 
+X.Org X Server 1.21.1.8
+X Protocol Version 11, Revision 0
+[    54.074] Current Operating System: Linux arch-usb 6.5.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 23 Sep 2023 22:55:13 +0000 x86_64
+[    54.074] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=8ce57342-d99c-4b3c-ae37-13ca6a7d97ea rw loglevel=3 quiet
+[    54.074]  
+[    54.075] Current version of pixman: 0.42.2
+[    54.075] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    54.075] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    54.076] (==) Log file: "/home/zfen/.local/share/xorg/Xorg.0.log", Time: Sat Oct  7 15:26:53 2023
+[    54.179] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    54.202] (==) No Layout section.  Using the first Screen section.
+[    54.202] (==) No screen section available. Using defaults.
+[    54.202] (**) |-->Screen "Default Screen Section" (0)
+[    54.202] (**) |   |-->Monitor "<default monitor>"
+[    54.203] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    54.203] (==) Automatically adding devices
+[    54.203] (==) Automatically enabling devices
+[    54.203] (==) Automatically adding GPU devices
+[    54.203] (==) Automatically binding GPU devices
+[    54.203] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    54.245] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    54.245] 	Entry deleted from font path.
+[    54.245] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[    54.245] 	Entry deleted from font path.
+[    54.245] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    54.245] 	Entry deleted from font path.
+[    54.245] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    54.245] 	Entry deleted from font path.
+[    54.251] (==) FontPath set to:
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[    54.252] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    54.252] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    54.252] (II) Module ABI versions:
+[    54.252] 	X.Org ANSI C Emulation: 0.4
+[    54.252] 	X.Org Video Driver: 25.2
+[    54.252] 	X.Org XInput driver : 24.4
+[    54.252] 	X.Org Server Extension : 10.0
+[    54.284] (++) using VT number 1
+
+[    54.287] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[    54.290] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    54.290] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/drm/card1
+[    54.290] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 13 paused 0
+[    54.291] (II) xfree86: Adding drm device (/dev/dri/card2)
+[    54.291] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card2
+[    54.291] (II) systemd-logind: got fd for /dev/dri/card2 226:2 fd 14 paused 0
+[    54.294] (--) PCI:*(0@0:2:0) 8086:0166:17aa:3910 rev 9, Mem @ 0xd1000000/4194304, 0xc0000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[    54.294] (--) PCI: (1@0:0:0) 10de:1140:17aa:3910 rev 161, Mem @ 0xd0000000/16777216, 0xa0000000/268435456, 0xb0000000/33554432, I/O @ 0x00003000/128, BIOS @ 0x????????/524288
+[    54.294] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    54.294] (II) LoadModule: "glx"
+[    54.321] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    54.407] (II) Module glx: vendor="X.Org Foundation"
+[    54.407] 	compiled for 1.21.1.8, module version = 1.0.0
+[    54.407] 	ABI class: X.Org Server Extension, version 10.0
+[    54.407] (==) Matched intel as autoconfigured driver 0
+[    54.407] (==) Matched nouveau as autoconfigured driver 1
+[    54.407] (==) Matched nv as autoconfigured driver 2
+[    54.407] (==) Matched modesetting as autoconfigured driver 3
+[    54.407] (==) Matched fbdev as autoconfigured driver 4
+[    54.407] (==) Matched vesa as autoconfigured driver 5
+[    54.407] (==) Assigned the driver to the xf86ConfigLayout
+[    54.407] (II) LoadModule: "intel"
+[    54.407] (WW) Warning, couldn't open module intel
+[    54.407] (EE) Failed to load module "intel" (module does not exist, 0)
+[    54.407] (II) LoadModule: "nouveau"
+[    54.407] (WW) Warning, couldn't open module nouveau
+[    54.407] (EE) Failed to load module "nouveau" (module does not exist, 0)
+[    54.407] (II) LoadModule: "nv"
+[    54.407] (WW) Warning, couldn't open module nv
+[    54.407] (EE) Failed to load module "nv" (module does not exist, 0)
+[    54.407] (II) LoadModule: "modesetting"
+[    54.407] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    54.449] (II) Module modesetting: vendor="X.Org Foundation"
+[    54.449] 	compiled for 1.21.1.8, module version = 1.21.1
+[    54.449] 	Module class: X.Org Video Driver
+[    54.449] 	ABI class: X.Org Video Driver, version 25.2
+[    54.449] (II) LoadModule: "fbdev"
+[    54.449] (WW) Warning, couldn't open module fbdev
+[    54.449] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    54.449] (II) LoadModule: "vesa"
+[    54.449] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    54.455] (II) Module vesa: vendor="X.Org Foundation"
+[    54.455] 	compiled for 1.21.1.4, module version = 2.6.0
+[    54.455] 	Module class: X.Org Video Driver
+[    54.455] 	ABI class: X.Org Video Driver, version 25.2
+[    54.455] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    54.455] (II) VESA: driver for VESA chipsets: vesa
+[    54.455] xf86EnableIO: failed to enable I/O ports 0000-03ff (Operation not permitted)
+[    54.455] (II) modeset(0): using drv /dev/dri/card2
+[    54.455] (II) modeset(G0): using drv /dev/dri/card1
+[    54.455] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    54.455] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    54.455] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    54.455] (==) modeset(0): RGB weight 888
+[    54.455] (==) modeset(0): Default visual is TrueColor
+[    54.455] (II) Loading sub module "glamoregl"
+[    54.455] (II) LoadModule: "glamoregl"
+[    54.456] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    54.520] (II) Module glamoregl: vendor="X.Org Foundation"
+[    54.520] 	compiled for 1.21.1.8, module version = 1.0.1
+[    54.520] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    57.501] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) HD Graphics 4000 (IVB GT2)
+[    57.501] (II) modeset(0): glamor initialized
+[    57.501] (==) modeset(0): VariableRefresh: disabled
+[    57.501] (==) modeset(0): AsyncFlipSecondaries: disabled
+[    57.502] (II) modeset(0): Output LVDS-1 has no monitor section
+[    57.503] (II) modeset(0): Output VGA-1 has no monitor section
+[    57.505] (II) modeset(0): Output HDMI-1 has no monitor section
+[    57.505] (II) modeset(0): Output DP-1 has no monitor section
+[    57.506] (II) modeset(0): EDID for output LVDS-1
+[    57.506] (II) modeset(0): Manufacturer: LGD  Model: 1ca  Serial#: 0
+[    57.506] (II) modeset(0): Year: 2008  Week: 0
+[    57.506] (II) modeset(0): EDID Version: 1.3
+[    57.506] (II) modeset(0): Digital Display Input
+[    57.506] (II) modeset(0): Max Image Size [cm]: horiz.: 38  vert.: 21
+[    57.506] (II) modeset(0): Gamma: 2.20
+[    57.506] (II) modeset(0): No DPMS capabilities specified
+[    57.506] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    57.506] (II) modeset(0): First detailed timing is preferred mode
+[    57.506] (II) modeset(0): redX: 0.615 redY: 0.346   greenX: 0.314 greenY: 0.602
+[    57.506] (II) modeset(0): blueX: 0.151 blueY: 0.109   whiteX: 0.312 whiteY: 0.328
+[    57.506] (II) modeset(0): Manufacturer's mask: 0
+[    57.506] (II) modeset(0): Supported detailed timing:
+[    57.506] (II) modeset(0): clock: 97.8 MHz   Image Size:  382 x 215 mm
+[    57.506] (II) modeset(0): h_active: 1600  h_sync: 1648  h_sync_end 1696 h_blank_end 1784 h_border: 0
+[    57.506] (II) modeset(0): v_active: 900  v_sync: 902  v_sync_end 905 v_blanking: 912 v_border: 0
+[    57.506] (II) modeset(0):  
+[    57.506] (II) modeset(0):  LP173WD1-TLA1
+[    57.506] (II) modeset(0): EDID (in hex):
+[    57.506] (II) modeset(0): 	00ffffffffffff0030e4ca0100000000
+[    57.506] (II) modeset(0): 	00120103802615780aa8c09d58509a26
+[    57.506] (II) modeset(0): 	1c505400000001010101010101010101
+[    57.506] (II) modeset(0): 	0101010101012f2640b860840c303030
+[    57.506] (II) modeset(0): 	23007ed7100000190000000000000000
+[    57.506] (II) modeset(0): 	00000000000000000000000000fe0000
+[    57.506] (II) modeset(0): 	00004c47446973706c61790a000000fe
+[    57.506] (II) modeset(0): 	004c503137335744312d544c41310078
+[    57.507] (II) modeset(0): Printing probed modes for output LVDS-1
+[    57.507] (II) modeset(0): Modeline "1600x900"x60.1   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[    57.507] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[    57.507] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[    57.507] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[    57.507] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[    57.507] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[    57.507] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[    57.507] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[    57.507] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[    57.507] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[    57.507] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[    57.507] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[    57.507] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[    57.507] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[    57.508] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[    57.508] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[    57.508] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[    57.508] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[    57.508] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[    57.508] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[    57.508] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[    57.508] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[    57.508] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[    57.508] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[    57.508] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[    57.508] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[    57.508] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[    57.508] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[    57.508] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[    57.508] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[    57.508] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[    57.508] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[    57.508] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[    57.508] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[    57.508] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[    57.508] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[    57.508] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[    57.509] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[    57.509] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[    57.509] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[    57.509] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[    57.509] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[    57.509] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[    57.509] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[    57.509] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[    57.509] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[    57.509] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[    57.510] (II) modeset(0): EDID for output VGA-1
+[    57.511] (II) modeset(0): EDID for output HDMI-1
+[    57.511] (II) modeset(0): EDID for output DP-1
+[    57.511] (II) modeset(0): Output LVDS-1 connected
+[    57.511] (II) modeset(0): Output VGA-1 disconnected
+[    57.511] (II) modeset(0): Output HDMI-1 disconnected
+[    57.511] (II) modeset(0): Output DP-1 disconnected
+[    57.511] (II) modeset(0): Using exact sizes for initial modes
+[    57.511] (II) modeset(0): Output LVDS-1 using initial mode 1600x900 +0+0
+[    57.511] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    57.512] (==) modeset(0): DPI set to (96, 96)
+[    57.512] (II) Loading sub module "fb"
+[    57.512] (II) LoadModule: "fb"
+[    57.512] (II) Module "fb" already built-in
+[    57.512] (==) modeset(G0): Depth 24, (==) framebuffer bpp 32
+[    57.512] (==) modeset(G0): RGB weight 888
+[    57.512] (==) modeset(G0): Default visual is TrueColor
+[    57.512] (II) Loading sub module "glamoregl"
+[    57.512] (II) LoadModule: "glamoregl"
+[    57.512] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    57.512] (II) Module glamoregl: vendor="X.Org Foundation"
+[    57.512] 	compiled for 1.21.1.8, module version = 1.0.1
+[    57.512] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    57.740] (II) modeset(G0): glamor X acceleration enabled on NVD7
+[    57.740] (II) modeset(G0): glamor initialized
+[    57.740] (==) modeset(G0): Using gamma correction (1.0, 1.0, 1.0)
+[    57.740] (==) modeset(G0): DPI set to (96, 96)
+[    57.741] (II) Loading sub module "fb"
+[    57.741] (II) LoadModule: "fb"
+[    57.741] (II) Module "fb" already built-in
+[    57.741] (II) UnloadModule: "vesa"
+[    57.741] (II) Unloading vesa
+[    58.207] (==) modeset(0): Backing store enabled
+[    58.207] (==) modeset(0): Silken mouse enabled
+[    58.240] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    58.241] (==) modeset(0): DPMS enabled
+[    58.241] (II) modeset(0): [DRI2] Setup complete
+[    58.241] (II) modeset(0): [DRI2]   DRI driver: crocus
+[    58.241] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[    58.303] (==) modeset(G0): Backing store enabled
+[    58.303] (==) modeset(G0): Silken mouse enabled
+[    58.303] (II) modeset(G0): Initializing kms color map for depth 24, 8 bpc.
+[    58.303] (==) modeset(G0): DPMS enabled
+[    58.303] (II) modeset(G0): [DRI2] Setup complete
+[    58.304] (II) modeset(G0): [DRI2]   DRI driver: nouveau
+[    58.304] (II) modeset(G0): [DRI2]   VDPAU driver: nouveau
+[    58.304] (II) Initializing extension Generic Event Extension
+[    58.304] (II) Initializing extension SHAPE
+[    58.304] (II) Initializing extension MIT-SHM
+[    58.304] (II) Initializing extension XInputExtension
+[    58.305] (II) Initializing extension XTEST
+[    58.305] (II) Initializing extension BIG-REQUESTS
+[    58.305] (II) Initializing extension SYNC
+[    58.305] (II) Initializing extension XKEYBOARD
+[    58.306] (II) Initializing extension XC-MISC
+[    58.306] (II) Initializing extension SECURITY
+[    58.306] (II) Initializing extension XFIXES
+[    58.306] (II) Initializing extension RENDER
+[    58.307] (II) Initializing extension RANDR
+[    58.307] (II) Initializing extension COMPOSITE
+[    58.307] (II) Initializing extension DAMAGE
+[    58.307] (II) Initializing extension MIT-SCREEN-SAVER
+[    58.308] (II) Initializing extension DOUBLE-BUFFER
+[    58.308] (II) Initializing extension RECORD
+[    58.308] (II) Initializing extension DPMS
+[    58.308] (II) Initializing extension Present
+[    58.309] (II) Initializing extension DRI3
+[    58.309] (II) Initializing extension X-Resource
+[    58.309] (II) Initializing extension XVideo
+[    58.309] (II) Initializing extension XVideo-MotionCompensation
+[    58.309] (II) Initializing extension GLX
+[    58.324] (II) AIGLX: Loaded and initialized crocus
+[    58.324] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    58.324] (II) Initializing extension XFree86-VidModeExtension
+[    58.325] (II) Initializing extension XFree86-DGA
+[    58.325] (II) Initializing extension XFree86-DRI
+[    58.325] (II) Initializing extension DRI2
+[    58.326] (II) modeset(G0): Damage tracking initialized
+[    58.326] (II) modeset(0): Damage tracking initialized
+[    58.326] (II) modeset(0): Setting screen physical size to 423 x 238
+[    58.986] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    58.986] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    58.986] (II) LoadModule: "libinput"
+[    58.986] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    59.035] (II) Module libinput: vendor="X.Org Foundation"
+[    59.035] 	compiled for 1.21.1.8, module version = 1.4.0
+[    59.035] 	Module class: X.Org XInput Driver
+[    59.035] 	ABI class: X.Org XInput driver, version 24.4
+[    59.035] (II) Using input driver 'libinput' for 'Power Button'
+[    59.036] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 32 paused 0
+[    59.036] (**) Power Button: always reports core events
+[    59.036] (**) Option "Device" "/dev/input/event1"
+[    59.109] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    59.109] (II) event1  - Power Button: device is a keyboard
+[    59.109] (II) event1  - Power Button: device removed
+[    59.109] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    59.109] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    59.110] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    59.110] (II) event1  - Power Button: device is a keyboard
+[    59.111] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[    59.111] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    59.111] (II) Using input driver 'libinput' for 'Video Bus'
+[    59.112] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 35 paused 0
+[    59.112] (**) Video Bus: always reports core events
+[    59.112] (**) Option "Device" "/dev/input/event4"
+[    59.115] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[    59.115] (II) event4  - Video Bus: device is a keyboard
+[    59.115] (II) event4  - Video Bus: device removed
+[    59.115] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input5/event4"
+[    59.115] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    59.118] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[    59.118] (II) event4  - Video Bus: device is a keyboard
+[    59.120] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[    59.120] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    59.120] (II) Using input driver 'libinput' for 'Video Bus'
+[    59.121] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 36 paused 0
+[    59.121] (**) Video Bus: always reports core events
+[    59.121] (**) Option "Device" "/dev/input/event3"
+[    59.123] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[    59.123] (II) event3  - Video Bus: device is a keyboard
+[    59.124] (II) event3  - Video Bus: device removed
+[    59.124] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:36/LNXVIDEO:00/input/input4/event3"
+[    59.124] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[    59.125] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[    59.125] (II) event3  - Video Bus: device is a keyboard
+[    59.125] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    59.126] (II) No input driver specified, ignoring this device.
+[    59.126] (II) This device may have been added with another device file.
+[    59.127] (II) config/udev: Adding input device Lenovo EasyCamera: Lenovo EasyC (/dev/input/event8)
+[    59.127] (**) Lenovo EasyCamera: Lenovo EasyC: Applying InputClass "libinput keyboard catchall"
+[    59.127] (II) Using input driver 'libinput' for 'Lenovo EasyCamera: Lenovo EasyC'
+[    59.128] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 37 paused 0
+[    59.128] (**) Lenovo EasyCamera: Lenovo EasyC: always reports core events
+[    59.128] (**) Option "Device" "/dev/input/event8"
+[    59.129] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: is tagged by udev as: Keyboard
+[    59.129] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device is a keyboard
+[    59.129] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device removed
+[    59.129] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input9/event8"
+[    59.129] (II) XINPUT: Adding extended input device "Lenovo EasyCamera: Lenovo EasyC" (type: KEYBOARD, id 9)
+[    59.131] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: is tagged by udev as: Keyboard
+[    59.131] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device is a keyboard
+[    59.131] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event9)
+[    59.131] (II) No input driver specified, ignoring this device.
+[    59.131] (II) This device may have been added with another device file.
+[    59.132] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event10)
+[    59.132] (II) No input driver specified, ignoring this device.
+[    59.132] (II) This device may have been added with another device file.
+[    59.132] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event11)
+[    59.132] (II) No input driver specified, ignoring this device.
+[    59.132] (II) This device may have been added with another device file.
+[    59.133] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event7)
+[    59.133] (**) Ideapad extra buttons: Applying InputClass "libinput keyboard catchall"
+[    59.133] (II) Using input driver 'libinput' for 'Ideapad extra buttons'
+[    59.134] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 38 paused 0
+[    59.134] (**) Ideapad extra buttons: always reports core events
+[    59.134] (**) Option "Device" "/dev/input/event7"
+[    59.134] (II) event7  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[    59.135] (II) event7  - Ideapad extra buttons: device is a keyboard
+[    59.135] (II) event7  - Ideapad extra buttons: device removed
+[    59.135] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/VPC2004:00/input/input8/event7"
+[    59.135] (II) XINPUT: Adding extended input device "Ideapad extra buttons" (type: KEYBOARD, id 10)
+[    59.136] (II) event7  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[    59.136] (II) event7  - Ideapad extra buttons: device is a keyboard
+[    59.136] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[    59.136] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    59.136] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    59.137] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 39 paused 0
+[    59.137] (**) AT Translated Set 2 keyboard: always reports core events
+[    59.137] (**) Option "Device" "/dev/input/event2"
+[    59.138] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    59.138] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    59.139] (II) event2  - AT Translated Set 2 keyboard: device removed
+[    59.139] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[    59.139] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 11)
+[    59.140] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    59.140] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    59.141] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event6)
+[    59.141] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
+[    59.141] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[    59.142] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 40 paused 0
+[    59.142] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[    59.142] (**) Option "Device" "/dev/input/event6"
+[    59.143] (II) event6  - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[    59.144] (II) event6  - SynPS/2 Synaptics TouchPad: device is a touchpad
+[    59.144] (II) event6  - SynPS/2 Synaptics TouchPad: device removed
+[    59.144] (II) libinput: SynPS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    59.144] (II) libinput: SynPS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    59.144] (II) libinput: SynPS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    59.145] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input7/event6"
+[    59.145] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 12)
+[    59.145] (**) Option "AccelerationScheme" "none"
+[    59.145] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[    59.145] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[    59.145] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[    59.146] (II) event6  - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[    59.148] (II) event6  - SynPS/2 Synaptics TouchPad: device is a touchpad
+[    59.148] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse0)
+[    59.148] (II) No input driver specified, ignoring this device.
+[    59.148] (II) This device may have been added with another device file.
+[    59.149] (II) config/udev: Adding input device PC Speaker (/dev/input/event5)
+[    59.149] (II) No input driver specified, ignoring this device.
+[    59.149] (II) This device may have been added with another device file.
+[    59.500] (II) modeset(0): EDID vendor "LGD", prod id 458
+[    59.500] (II) modeset(0): Printing DDC gathered Modelines:
+[    59.500] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[   357.360] (II) config/udev: Adding input device HOLTEK USB Wireless Device Mouse (/dev/input/mouse1)
+[   357.360] (II) No input driver specified, ignoring this device.
+[   357.360] (II) This device may have been added with another device file.
+[   357.401] (II) config/udev: Adding input device HOLTEK USB Wireless Device System Control (/dev/input/event14)
+[   357.401] (**) HOLTEK USB Wireless Device System Control: Applying InputClass "libinput keyboard catchall"
+[   357.401] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device System Control'
+[   357.403] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 59 paused 0
+[   357.403] (**) HOLTEK USB Wireless Device System Control: always reports core events
+[   357.403] (**) Option "Device" "/dev/input/event14"
+[   357.404] (II) event14 - HOLTEK USB Wireless Device System Control: is tagged by udev as: Keyboard
+[   357.404] (II) event14 - HOLTEK USB Wireless Device System Control: device is a keyboard
+[   357.405] (II) event14 - HOLTEK USB Wireless Device System Control: device removed
+[   357.405] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.1/0003:046A:B102.0002/input/input15/event14"
+[   357.405] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device System Control" (type: KEYBOARD, id 13)
+[   357.406] (II) event14 - HOLTEK USB Wireless Device System Control: is tagged by udev as: Keyboard
+[   357.407] (II) event14 - HOLTEK USB Wireless Device System Control: device is a keyboard
+[   357.408] (II) config/udev: Adding input device HOLTEK USB Wireless Device Consumer Control (/dev/input/event15)
+[   357.408] (**) HOLTEK USB Wireless Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   357.408] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device Consumer Control'
+[   357.409] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 60 paused 0
+[   357.409] (**) HOLTEK USB Wireless Device Consumer Control: always reports core events
+[   357.409] (**) Option "Device" "/dev/input/event15"
+[   357.411] (II) event15 - HOLTEK USB Wireless Device Consumer Control: is tagged by udev as: Keyboard
+[   357.411] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device is a keyboard
+[   357.411] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device removed
+[   357.412] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.1/0003:046A:B102.0002/input/input16/event15"
+[   357.412] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device Consumer Control" (type: KEYBOARD, id 14)
+[   357.414] (II) event15 - HOLTEK USB Wireless Device Consumer Control: is tagged by udev as: Keyboard
+[   357.414] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device is a keyboard
+[   357.415] (II) config/udev: Adding input device HOLTEK USB Wireless Device Mouse (/dev/input/event13)
+[   357.415] (**) HOLTEK USB Wireless Device Mouse: Applying InputClass "libinput pointer catchall"
+[   357.415] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device Mouse'
+[   357.416] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 61 paused 0
+[   357.416] (**) HOLTEK USB Wireless Device Mouse: always reports core events
+[   357.416] (**) Option "Device" "/dev/input/event13"
+[   357.418] (II) event13 - HOLTEK USB Wireless Device Mouse: is tagged by udev as: Mouse
+[   357.418] (II) event13 - HOLTEK USB Wireless Device Mouse: device is a pointer
+[   357.418] (II) event13 - HOLTEK USB Wireless Device Mouse: device removed
+[   357.418] (II) libinput: HOLTEK USB Wireless Device Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   357.418] (II) libinput: HOLTEK USB Wireless Device Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   357.418] (II) libinput: HOLTEK USB Wireless Device Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   357.419] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.1/0003:046A:B102.0002/input/input14/event13"
+[   357.419] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device Mouse" (type: MOUSE, id 15)
+[   357.419] (**) Option "AccelerationScheme" "none"
+[   357.419] (**) HOLTEK USB Wireless Device Mouse: (accel) selected scheme none/0
+[   357.419] (**) HOLTEK USB Wireless Device Mouse: (accel) acceleration factor: 2.000
+[   357.419] (**) HOLTEK USB Wireless Device Mouse: (accel) acceleration threshold: 4
+[   357.421] (II) event13 - HOLTEK USB Wireless Device Mouse: is tagged by udev as: Mouse
+[   357.421] (II) event13 - HOLTEK USB Wireless Device Mouse: device is a pointer
+[   357.422] (II) config/udev: Adding input device HOLTEK USB Wireless Device (/dev/input/event12)
+[   357.422] (**) HOLTEK USB Wireless Device: Applying InputClass "libinput keyboard catchall"
+[   357.422] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device'
+[   357.422] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 62 paused 0
+[   357.422] (**) HOLTEK USB Wireless Device: always reports core events
+[   357.423] (**) Option "Device" "/dev/input/event12"
+[   357.424] (II) event12 - HOLTEK USB Wireless Device: is tagged by udev as: Keyboard
+[   357.424] (II) event12 - HOLTEK USB Wireless Device: device is a keyboard
+[   357.424] (II) event12 - HOLTEK USB Wireless Device: device removed
+[   357.425] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/0003:046A:B102.0001/input/input13/event12"
+[   357.425] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device" (type: KEYBOARD, id 16)
+[   357.426] (II) event12 - HOLTEK USB Wireless Device: is tagged by udev as: Keyboard
+[   357.426] (II) event12 - HOLTEK USB Wireless Device: device is a keyboard
+[  2646.722] (II) Axis 0x1 value 1218 is outside expected range [1233, 5076]
+See https://wayland.freedesktop.org/libinput/doc/1.24.0/absolute_coordinate_ranges.html for details
+[  2689.189] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  2689.189] (II) modeset(0): Printing DDC gathered Modelines:
+[  2689.189] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  2937.662] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  2937.662] (II) modeset(0): Printing DDC gathered Modelines:
+[  2937.662] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  2979.608] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  2979.608] (II) modeset(0): Printing DDC gathered Modelines:
+[  2979.608] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  2991.642] (II) modeset(0): Allocate new frame buffer 2048x1152 stride
+[  2991.787] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  2991.787] (II) modeset(0): Printing DDC gathered Modelines:
+[  2991.787] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  2991.903] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  2991.903] (II) modeset(0): Printing DDC gathered Modelines:
+[  2991.903] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  3105.711] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  3105.711] (II) modeset(0): Printing DDC gathered Modelines:
+[  3105.711] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  3423.848] (II) config/udev: removing device Power Button
+[  3423.848] (**) Option "fd" "32"
+[  3423.848] (II) event1  - Power Button: device removed
+[  3423.848] (II) UnloadModule: "libinput"
+[  3423.848] (II) systemd-logind: releasing fd for 13:65
+[  3423.866] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  3423.867] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  3423.867] (II) Using input driver 'libinput' for 'Power Button'
+[  3423.869] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 48 paused 0
+[  3423.869] (**) Power Button: always reports core events
+[  3423.869] (**) Option "Device" "/dev/input/event1"
+[  3423.870] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  3423.870] (II) event1  - Power Button: device is a keyboard
+[  3423.870] (II) event1  - Power Button: device removed
+[  3423.870] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[  3423.870] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  3423.872] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  3423.872] (II) event1  - Power Button: device is a keyboard
+[  3423.890] (II) modeset(0): EDID vendor "LGD", prod id 458
+[  3423.890] (II) modeset(0): Printing DDC gathered Modelines:
+[  3423.890] (II) modeset(0): Modeline "1600x900"x0.0   97.75  1600 1648 1696 1784  900 902 905 912 -hsync -vsync (54.8 kHz eP)
+[  3424.079] (II) config/udev: removing device Video Bus
+[  3424.079] (**) Option "fd" "35"
+[  3424.079] (II) event4  - Video Bus: device removed
+[  3424.080] (II) UnloadModule: "libinput"
+[  3424.080] (II) systemd-logind: releasing fd for 13:68
+[  3424.081] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[  3424.081] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  3424.081] (II) Using input driver 'libinput' for 'Video Bus'
+[  3424.082] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 35 paused 0
+[  3424.082] (**) Video Bus: always reports core events
+[  3424.082] (**) Option "Device" "/dev/input/event4"
+[  3424.083] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[  3424.083] (II) event4  - Video Bus: device is a keyboard
+[  3424.083] (II) event4  - Video Bus: device removed
+[  3424.083] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input5/event4"
+[  3424.083] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[  3424.085] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[  3424.085] (II) event4  - Video Bus: device is a keyboard
+[  3424.086] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[  3424.086] (II) No input driver specified, ignoring this device.
+[  3424.086] (II) This device may have been added with another device file.
+[  3424.087] (II) config/udev: Adding input device HOLTEK USB Wireless Device Mouse (/dev/input/mouse1)
+[  3424.087] (II) No input driver specified, ignoring this device.
+[  3424.087] (II) This device may have been added with another device file.
+[  3424.087] (II) config/udev: removing device Video Bus
+[  3424.087] (**) Option "fd" "36"
+[  3424.087] (II) event3  - Video Bus: device removed
+[  3424.088] (II) UnloadModule: "libinput"
+[  3424.088] (II) systemd-logind: releasing fd for 13:67
+[  3424.120] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[  3424.120] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  3424.120] (II) Using input driver 'libinput' for 'Video Bus'
+[  3424.121] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 36 paused 0
+[  3424.121] (**) Video Bus: always reports core events
+[  3424.121] (**) Option "Device" "/dev/input/event3"
+[  3424.122] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[  3424.122] (II) event3  - Video Bus: device is a keyboard
+[  3424.123] (II) event3  - Video Bus: device removed
+[  3424.123] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:36/LNXVIDEO:00/input/input4/event3"
+[  3424.123] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[  3424.124] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[  3424.124] (II) event3  - Video Bus: device is a keyboard
+[  3424.125] (II) config/udev: removing device HOLTEK USB Wireless Device Consumer Control
+[  3424.125] (**) Option "fd" "60"
+[  3424.125] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device removed
+[  3424.125] (II) UnloadModule: "libinput"
+[  3424.125] (II) systemd-logind: releasing fd for 13:79
+[  3424.126] (II) config/udev: Adding input device HOLTEK USB Wireless Device Consumer Control (/dev/input/event15)
+[  3424.126] (**) HOLTEK USB Wireless Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  3424.126] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device Consumer Control'
+[  3424.127] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 60 paused 0
+[  3424.127] (**) HOLTEK USB Wireless Device Consumer Control: always reports core events
+[  3424.127] (**) Option "Device" "/dev/input/event15"
+[  3424.129] (II) event15 - HOLTEK USB Wireless Device Consumer Control: is tagged by udev as: Keyboard
+[  3424.129] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device is a keyboard
+[  3424.129] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device removed
+[  3424.129] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.1/0003:046A:B102.0002/input/input16/event15"
+[  3424.129] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device Consumer Control" (type: KEYBOARD, id 14)
+[  3424.131] (II) event15 - HOLTEK USB Wireless Device Consumer Control: is tagged by udev as: Keyboard
+[  3424.131] (II) event15 - HOLTEK USB Wireless Device Consumer Control: device is a keyboard
+[  3424.132] (II) config/udev: removing device Lenovo EasyCamera: Lenovo EasyC
+[  3424.132] (**) Option "fd" "37"
+[  3424.132] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device removed
+[  3424.132] (II) UnloadModule: "libinput"
+[  3424.132] (II) systemd-logind: releasing fd for 13:72
+[  3424.133] (II) config/udev: Adding input device Lenovo EasyCamera: Lenovo EasyC (/dev/input/event8)
+[  3424.133] (**) Lenovo EasyCamera: Lenovo EasyC: Applying InputClass "libinput keyboard catchall"
+[  3424.133] (II) Using input driver 'libinput' for 'Lenovo EasyCamera: Lenovo EasyC'
+[  3424.134] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 37 paused 0
+[  3424.134] (**) Lenovo EasyCamera: Lenovo EasyC: always reports core events
+[  3424.134] (**) Option "Device" "/dev/input/event8"
+[  3424.136] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: is tagged by udev as: Keyboard
+[  3424.136] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device is a keyboard
+[  3424.136] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device removed
+[  3424.136] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input9/event8"
+[  3424.136] (II) XINPUT: Adding extended input device "Lenovo EasyCamera: Lenovo EasyC" (type: KEYBOARD, id 9)
+[  3424.138] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: is tagged by udev as: Keyboard
+[  3424.138] (II) event8  - Lenovo EasyCamera: Lenovo EasyC: device is a keyboard
+[  3424.139] (II) config/udev: removing device HOLTEK USB Wireless Device System Control
+[  3424.139] (**) Option "fd" "59"
+[  3424.139] (II) event14 - HOLTEK USB Wireless Device System Control: device removed
+[  3424.139] (II) UnloadModule: "libinput"
+[  3424.139] (II) systemd-logind: releasing fd for 13:78
+[  3424.141] (II) config/udev: Adding input device HOLTEK USB Wireless Device System Control (/dev/input/event14)
+[  3424.141] (**) HOLTEK USB Wireless Device System Control: Applying InputClass "libinput keyboard catchall"
+[  3424.141] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device System Control'
+[  3424.141] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 59 paused 0
+[  3424.141] (**) HOLTEK USB Wireless Device System Control: always reports core events
+[  3424.141] (**) Option "Device" "/dev/input/event14"
+[  3424.143] (II) event14 - HOLTEK USB Wireless Device System Control: is tagged by udev as: Keyboard
+[  3424.143] (II) event14 - HOLTEK USB Wireless Device System Control: device is a keyboard
+[  3424.143] (II) event14 - HOLTEK USB Wireless Device System Control: device removed
+[  3424.143] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.1/0003:046A:B102.0002/input/input15/event14"
+[  3424.144] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device System Control" (type: KEYBOARD, id 13)
+[  3424.145] (II) event14 - HOLTEK USB Wireless Device System Control: is tagged by udev as: Keyboard
+[  3424.145] (II) event14 - HOLTEK USB Wireless Device System Control: device is a keyboard
+[  3424.146] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse0)
+[  3424.146] (II) No input driver specified, ignoring this device.
+[  3424.146] (II) This device may have been added with another device file.
+[  3424.146] (II) config/udev: removing device HOLTEK USB Wireless Device Mouse
+[  3424.146] (**) Option "fd" "61"
+[  3424.146] (II) event13 - HOLTEK USB Wireless Device Mouse: device removed
+[  3424.147] (II) UnloadModule: "libinput"
+[  3424.147] (II) systemd-logind: releasing fd for 13:77
+[  3424.148] (II) config/udev: Adding input device HOLTEK USB Wireless Device Mouse (/dev/input/event13)
+[  3424.148] (**) HOLTEK USB Wireless Device Mouse: Applying InputClass "libinput pointer catchall"
+[  3424.148] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device Mouse'
+[  3424.149] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 61 paused 0
+[  3424.149] (**) HOLTEK USB Wireless Device Mouse: always reports core events
+[  3424.149] (**) Option "Device" "/dev/input/event13"
+[  3424.150] (II) event13 - HOLTEK USB Wireless Device Mouse: is tagged by udev as: Mouse
+[  3424.151] (II) event13 - HOLTEK USB Wireless Device Mouse: device is a pointer
+[  3424.151] (II) event13 - HOLTEK USB Wireless Device Mouse: device removed
+[  3424.151] (II) libinput: HOLTEK USB Wireless Device Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3424.151] (II) libinput: HOLTEK USB Wireless Device Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3424.151] (II) libinput: HOLTEK USB Wireless Device Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3424.151] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.1/0003:046A:B102.0002/input/input14/event13"
+[  3424.151] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device Mouse" (type: MOUSE, id 15)
+[  3424.151] (**) Option "AccelerationScheme" "none"
+[  3424.151] (**) HOLTEK USB Wireless Device Mouse: (accel) selected scheme none/0
+[  3424.151] (**) HOLTEK USB Wireless Device Mouse: (accel) acceleration factor: 2.000
+[  3424.151] (**) HOLTEK USB Wireless Device Mouse: (accel) acceleration threshold: 4
+[  3424.153] (II) event13 - HOLTEK USB Wireless Device Mouse: is tagged by udev as: Mouse
+[  3424.153] (II) event13 - HOLTEK USB Wireless Device Mouse: device is a pointer
+[  3424.155] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event9)
+[  3424.155] (II) No input driver specified, ignoring this device.
+[  3424.155] (II) This device may have been added with another device file.
+[  3424.155] (II) config/udev: removing device Ideapad extra buttons
+[  3424.155] (**) Option "fd" "38"
+[  3424.155] (II) event7  - Ideapad extra buttons: device removed
+[  3424.156] (II) UnloadModule: "libinput"
+[  3424.156] (II) systemd-logind: releasing fd for 13:71
+[  3424.157] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event7)
+[  3424.157] (**) Ideapad extra buttons: Applying InputClass "libinput keyboard catchall"
+[  3424.157] (II) Using input driver 'libinput' for 'Ideapad extra buttons'
+[  3424.157] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 38 paused 0
+[  3424.157] (**) Ideapad extra buttons: always reports core events
+[  3424.157] (**) Option "Device" "/dev/input/event7"
+[  3424.158] (II) event7  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[  3424.159] (II) event7  - Ideapad extra buttons: device is a keyboard
+[  3424.159] (II) event7  - Ideapad extra buttons: device removed
+[  3424.159] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/VPC2004:00/input/input8/event7"
+[  3424.159] (II) XINPUT: Adding extended input device "Ideapad extra buttons" (type: KEYBOARD, id 10)
+[  3424.160] (II) event7  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[  3424.160] (II) event7  - Ideapad extra buttons: device is a keyboard
+[  3424.161] (II) config/udev: Adding input device PC Speaker (/dev/input/event5)
+[  3424.161] (II) No input driver specified, ignoring this device.
+[  3424.161] (II) This device may have been added with another device file.
+[  3424.161] (II) config/udev: removing device HOLTEK USB Wireless Device
+[  3424.161] (**) Option "fd" "62"
+[  3424.161] (II) event12 - HOLTEK USB Wireless Device: device removed
+[  3424.161] (II) UnloadModule: "libinput"
+[  3424.161] (II) systemd-logind: releasing fd for 13:76
+[  3424.163] (II) config/udev: Adding input device HOLTEK USB Wireless Device (/dev/input/event12)
+[  3424.163] (**) HOLTEK USB Wireless Device: Applying InputClass "libinput keyboard catchall"
+[  3424.163] (II) Using input driver 'libinput' for 'HOLTEK USB Wireless Device'
+[  3424.164] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 62 paused 0
+[  3424.164] (**) HOLTEK USB Wireless Device: always reports core events
+[  3424.164] (**) Option "Device" "/dev/input/event12"
+[  3424.165] (II) event12 - HOLTEK USB Wireless Device: is tagged by udev as: Keyboard
+[  3424.165] (II) event12 - HOLTEK USB Wireless Device: device is a keyboard
+[  3424.166] (II) event12 - HOLTEK USB Wireless Device: device removed
+[  3424.166] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/0003:046A:B102.0001/input/input13/event12"
+[  3424.166] (II) XINPUT: Adding extended input device "HOLTEK USB Wireless Device" (type: KEYBOARD, id 16)
+[  3424.167] (II) event12 - HOLTEK USB Wireless Device: is tagged by udev as: Keyboard
+[  3424.168] (II) event12 - HOLTEK USB Wireless Device: device is a keyboard
+[  3424.168] (II) config/udev: removing device AT Translated Set 2 keyboard
+[  3424.168] (**) Option "fd" "39"
+[  3424.168] (II) event2  - AT Translated Set 2 keyboard: device removed
+[  3424.168] (II) UnloadModule: "libinput"
+[  3424.168] (II) systemd-logind: releasing fd for 13:66
+[  3424.169] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[  3424.169] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  3424.169] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  3424.170] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 39 paused 0
+[  3424.170] (**) AT Translated Set 2 keyboard: always reports core events
+[  3424.170] (**) Option "Device" "/dev/input/event2"
+[  3424.171] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  3424.171] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[  3424.172] (II) event2  - AT Translated Set 2 keyboard: device removed
+[  3424.172] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[  3424.172] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 11)
+[  3424.174] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  3424.174] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[  3424.175] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event10)
+[  3424.175] (II) No input driver specified, ignoring this device.
+[  3424.175] (II) This device may have been added with another device file.
+[  3424.179] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event11)
+[  3424.179] (II) No input driver specified, ignoring this device.
+[  3424.179] (II) This device may have been added with another device file.
+[  3424.179] (II) config/udev: removing device SynPS/2 Synaptics TouchPad
+[  3424.180] (**) Option "fd" "40"
+[  3424.180] (II) event6  - SynPS/2 Synaptics TouchPad: device removed
+[  3424.180] (II) UnloadModule: "libinput"
+[  3424.180] (II) systemd-logind: releasing fd for 13:70
+[  3424.181] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event6)
+[  3424.181] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
+[  3424.181] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[  3424.182] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 40 paused 0
+[  3424.182] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[  3424.182] (**) Option "Device" "/dev/input/event6"
+[  3424.183] (II) event6  - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[  3424.184] (II) event6  - SynPS/2 Synaptics TouchPad: device is a touchpad
+[  3424.185] (II) event6  - SynPS/2 Synaptics TouchPad: device removed
+[  3424.185] (II) libinput: SynPS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3424.185] (II) libinput: SynPS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3424.185] (II) libinput: SynPS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3424.185] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input7/event6"
+[  3424.185] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 12)
+[  3424.186] (**) Option "AccelerationScheme" "none"
+[  3424.186] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[  3424.186] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[  3424.186] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[  3424.187] (II) event6  - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[  3424.188] (II) event6  - SynPS/2 Synaptics TouchPad: device is a touchpad
+[  3596.759] (**) Option "fd" "40"
+[  3596.759] (II) event6  - SynPS/2 Synaptics TouchPad: device removed

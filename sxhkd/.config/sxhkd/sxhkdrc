@@ -15,7 +15,7 @@ super + X
 	qutebrowser -B ~/.local/share/qutebrowser/x 
 	# qutebrowser -B ~/.local/share/qutebrowser/x --loglines 0
 
-# terminal emulator
+terminal emulator
 super + Return
 	st
 

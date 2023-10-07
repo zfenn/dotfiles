@@ -2,10 +2,11 @@
 " .vim/colors.vim
 
 set t_Co=255
-set background=light
+" set background=light
+    set background=light
 
 colorscheme pencil
-set termguicolors
+    " set termguicolors
 
 " let g:pencil_higher_contrast_ui = 0
 hi Normal guibg=#DBDBDB

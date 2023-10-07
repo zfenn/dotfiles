@@ -9,3 +9,4 @@ HISTFILE="$XDG_DATA_HOME/zhistory"
 
 ZDOTDIR="/home/zfen/.config/zsh"
 source "$ZDOTDIR/zshrc"
+bindkey -v

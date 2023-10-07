@@ -2,4 +2,7 @@
 # .xinitrc
 #
 
-[ -f ~/.xprofile ] && . ~/.xprofile
+st&
+sxhkd&
+exec bspwm
+# [ -f ~/.xprofile ] && . ~/.xprofile

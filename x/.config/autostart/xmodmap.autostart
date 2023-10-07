@@ -1,1 +1,3 @@
-xmodmap ~/.xmodmap
+# vim: ft=sh
+
+# xmodmap ~/.xmodmap

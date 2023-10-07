@@ -1,17 +1,24 @@
+! vim: ft=xdefaults
 
-st.font:	DejaVu Sans Mono:pixelsize=11.0:antialias=true:autohint=true;
-st.borderpx: 0
+/* st.termname: xst-256color */
 
-!! PencilLight
-!! https://github.com/janoamaral/Xresources-themes
-!! With some changes
+!xterm*faceName: Monospace Regular
+!xterm*faceSize: 11
+!xterm*boldMode: false
 
-*.foreground:  #424242
-! *.background:  #f1f1f1
-*background: #DBDBDB
-!*.cursorColor: #20bbfc
-!*.cursorColor: #000000
-*.cursorColor: #20a5ba
+/* st.font: DejaVu Sans:pixelsize=18.0:antialias=true:autohint=true; */
+st.font: DejaVu Sans Mono:pixelsize=15.0:antialias=true:autohint=true;
+
+
+/* !! PencilLight */
+/* !! https://github.com/janoamaral/Xresources-themes */
+/* !! With some changes */
+
+st.foreground:  #000000
+st.cursorColor: #20a5ba
+
+st.background: #dbdbdb
+
 
 ! Black
 *.color0:      #212121
