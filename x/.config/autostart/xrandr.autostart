@@ -7,3 +7,5 @@
 xrandr --newmode 2432x1368_60.00  280.25  2432 2608 2864 3296  1368 1371 1376 1418 -hsync +vsync
 xrandr --addmode LVDS-1 2432x1368_60.00
 xrandr --output LVDS-1 --mode 2432x1368_60.00
+
+xrandr --output LVDS-1 --gamma 0.4
