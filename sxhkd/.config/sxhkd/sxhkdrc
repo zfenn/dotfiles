@@ -1,31 +1,25 @@
-# vim ft=zsh
 # wm independent hotkeys
 
-## super + p: telegram-desktop
-super + p
-	telegram-desktop
+## - Launcher
+# ---------------------------------------------------------------------------
 
-## super + q: qutebrowser
+### Telegram desktop
+super + p
+    telegram-desktop
+
+### qutebrowser
 super + q ; {q,x}
     {qutebrowser --loglines 0,qutebrowser -B ~/.local/share/qutebrowser/x --loglines 0}
 
-
-# super + Return: Terminal
-terminal emulator
-super + Return
-	st
-
-
-# super + n + {h,j,k,l}
-super + n ; {h,j,k,l}
-    st; bspc node -p {west,south,north,east} -o 0.7
+### Terminal
+super + Return ; {h,j,k,l}
+    bspc node -p {west,south,north,east}; st
+    # bspc node -p {west,south,north,east} -o 0.7; st
 
 
 
-super + alt + {h,j,k,l}
-	bspwm_resize {west,south,north,east} 50
-
-# Backlight
+## -Special keys
+### Backlight
 XF86MonBrightnessUp
   light -A 5
 XF86MonBrightnessDown
@@ -33,19 +27,23 @@ XF86MonBrightnessDown
 
 # Volume Control
 XF86AudioLowerVolume
-	amixer set Master 5%-
+   amixer set Master 5%-
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+   amixer set Master 5%+
 XF86AudioMute
-	amixer set Master toggle
+   amixer set Master toggle
+
+super + alt + {h,j,k,l}
+   bspwm_resize {west,south,north,east} 50
+
 
 # program launcher
 super + @space
-	rofi -show run
+   rofi -show run
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+   pkill -USR1 -x sxhkd
 
 #
 # bspwm hotkeys
@@ -53,22 +51,22 @@ super + Escape
 
 # quit/restart bspwm
 super + alt + {q,r}
-	bspc {quit,wm -r}
+   bspc {quit,wm -r}
 
 # close and kill
 super + {_,shift + }w
-	bspc node -{c,k}
+   bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
 super + m
-	bspc desktop -l next
+   bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
 super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+   bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window super + g
-	bspc node -s biggest.window
+   bspc node -s biggest.window
 
 #
 # state/flags
@@ -76,11 +74,11 @@ super + y
 
 # set the window state
 super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+   bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
 super + ctrl + {m,x,s,p}
-	bspc node -g {marked,locked,sticky,private}
+   bspc node -g {marked,locked,sticky,private}
 
 #
 # focus/swap
@@ -88,33 +86,33 @@ super + ctrl + {m,x,s,p}
 
 # focus the node in the given direction
 super + {_,ctrl + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
+   bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+   bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
+   bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+   bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+   bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+   bspc wm -h off; \
+   bspc node {older,newer} -f; \
+   bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+   bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
 # preselect
@@ -122,19 +120,19 @@ super + {_,shift + }{1-9,0}
 
 # preselect the direction
 super + shift + {h,j,k,l}
-	bspc node -p {west,south,north,east} -o 0.7
+   bspc node -p {west,south,north,east} -o 0.7
 
 # preselect the ratio
 super + shift + {1-9}
-	bspc node -o 0.{1-9}
+   bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
 super + shift + space
-	bspc node -p cancel
+   bspc node -p cancel
 
 # cancel the preselection for the focused desktop
 super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+   bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
 # move/resize
@@ -142,12 +140,12 @@ super + ctrl + shift + space
 
 # expand a window by moving one of its side outward
 # super + alt + {h,j,k,l}
-# 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+#   bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # # contract a window by moving one of its side inward
 # super + alt + shift + {h,j,k,l}
-# 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+#   bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+   bspc node -v {-20 0,0 20,0 -20,20 0}

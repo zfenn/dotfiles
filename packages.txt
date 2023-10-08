@@ -35,3 +35,7 @@ pac -S lxappearance
 pac -S ntfs-3g
 pac -S notification-daemon
 pac -S lib-notify dunst
+pac -S ueberzug
+pac -S base-devel
+git clone https://aur.archlinux.org/pikaur.git
+pac -S nerd-fonts

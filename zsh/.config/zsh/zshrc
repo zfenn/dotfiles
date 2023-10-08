@@ -19,6 +19,9 @@ for file in $XDG_CONFIG_HOME/zsh/plugins/*.zsh; do
 done
 
 ## ALIAS
+## systemctl
+alias stl="systemctl"
+
 ### updatedb
 alias udb="sudo updatedb"
 alias updatedb="sudo updatedb"

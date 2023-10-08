@@ -7,6 +7,9 @@ source ~/.vim/bindings.vim
 source ~/.vim/zffold.vim
 source ~/.vim/plugins.vim
 
+nnoremap c" _i" <esc>75i-<esc>
+nnoremap c# _i# <esc>75i-<esc>
+" ---------------------------------------------------------------------------
 "" Statusline
 hi User1 guifg=white guibg=darkgrey
 set statusline=%1*\ %{strftime('%H:%M')} " TIme
@@ -21,6 +24,10 @@ set statusline+=\ \|\          		 " Spacer
 
 "" Source vim-configs on save
 autocmd! bufwritepost *vim* source ~/.vimrc
+
+"" Reload sxhkd on save
+autocmd! bufwritepost sxhkdrc :silent  !pkill -USR1 -x sxhkd
+
 "" Disabled Delete trailing space on save"
 " autocmd! BufWritePre * :%s/\s\+$//e
 
