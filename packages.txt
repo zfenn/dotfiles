@@ -33,3 +33,5 @@ pac -S light
 usermod -aG video <user>
 pac -S lxappearance
 pac -S ntfs-3g
+pac -S notification-daemon
+pac -S lib-notify dunst

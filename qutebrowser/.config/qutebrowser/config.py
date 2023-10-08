@@ -6,6 +6,8 @@ config.load_autoconfig(True)
 
 c.zoom.default = "120%"
 
+c.url.default_page = "https://duckduckgo.com/?kak=-1&kao=-1&kaq=-1&kav=1&kk=-1"
+
 c.tabs.new_position.unrelated = "next"
 
 
@@ -13,9 +15,16 @@ config.bind(",p", "spawn --userscript password-fill")
 
 # config.unbind ("=")
 
-c.messages.timeout = 9000
+# c.messages.timeout = 9000
 
-c.url.default_page = "file:///home/zfen/p/src/Minimal-StartPage/index.html"
+
+c.colors.hints.bg = '#20bbfc'
+c.colors.hints.fg = '#ffffff'
+c.hints.radius = 0
+c.hints.uppercase = True
+
+
+# c.url.default_page = "file:///home/zfen/p/src/Minimal-StartPage/index.html"
 
 config.bind(",r", "config-source")
 #config.unbind("0")
